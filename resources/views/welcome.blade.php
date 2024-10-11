@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Hero 섹션 -->
-    <section class="bg-white py-20">
+    <section class="bg-white py-40">
         <div class="container max-w-7xl mx-auto justify-between items-center px-6">
             <h1 class="text-6xl font-extrabold text-gray-900 leading-tight"><span class="text-blue-600">One Dollar</span>, All the Market Insights.</h1>
             <div class="flex flex-col md:flex-row justify-center items-center mt-10">
@@ -27,8 +27,8 @@
     </section>
 
     <!-- 신뢰 요소 섹션 -->
-    <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+    <section class="bg-gray-100 py-40">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 text-center px-6">
             <!-- 신뢰 요소들 -->
             <div class="p-8 bg-white shadow-md">
                 <h3 class="text-3xl font-bold text-gray-800">Warren Buffett</h3>
@@ -46,7 +46,7 @@
     </section>
 
     <!-- CTA 섹션 -->
-    <section class="bg-blue-500 py-20 text-left text-white">
+    <section class="bg-blue-500 py-40 text-left text-white">
         <div class="container max-w-7xl mx-auto  justify-between items-center px-6">
             <h2 class="text-5xl font-bold">Three more ways I can help <span class="text-teal-300">you</span>.</h2>
 
