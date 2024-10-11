@@ -1,20 +1,28 @@
 @extends('layouts.layout')
 
-@section('title', 'Dashboard')
+@section('title', 'Home')
 
 @section('content')
     <!-- Hero 섹션 -->
     <section class="bg-white py-20">
-        <div class="container max-w-7xl mx-auto  justify-between items-center px-6">
-            <h1 class="text-6xl font-extrabold text-gray-900 leading-tight">One Dollar, All the Market Insights</h1>
-            <p class="mt-6 text-xl font-light text-gray-600">A thousand times the value with 100,000+ investors starting with $1.</p>
-            
-            <!-- Subscribe Form -->
-            <form action="/subscribe" method="POST" class="mt-8 flex justify-center">
-                @csrf
-                <input type="email" name="email" placeholder="Enter your email" class="px-4 py-3 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <button type="submit" class="bg-blue-600 text-white text-lg px-8 py-3 rounded-r-lg hover:bg-blue-700">Subscribe</button>
-            </form>
+        <div class="container max-w-7xl mx-auto justify-between items-center px-6">
+            <h1 class="text-6xl font-extrabold text-gray-900 leading-tight"><span class="text-blue-600">One Dollar</span>, All the Market Insights.</h1>
+            <div class="flex flex-col md:flex-row justify-center items-center mt-10">
+                <div class="text-left md:mr-10 md:w-auto mb-8 md:mb-0 md:flex-1">
+                    <h2 class="text-3xl font-bold text-gray-900">Want to join us?</h2>
+                    <p class="mt-4 text-lg text-gray-600">From free to $1, start with a click and create a thousand times the value - many investors have already started!</p>
+                </div>
+                <svg class="w-10 h-max text-blue-600 mr-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+                <div class="text-left mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-3">Start here.</h2>
+                    <form action="/subscribe" method="POST" class="flex">
+                        <input type="email" name="email" placeholder="Email Address" class="px-4 py-3 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <button type="submit" class="bg-blue-600 text-white text-lg px-8 py-3 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -38,11 +46,42 @@
     </section>
 
     <!-- CTA 섹션 -->
-    <section class="bg-blue-600 py-20 text-center text-white">
-        <div class="container mx-auto">
-            <h2 class="text-4xl font-bold">Start Your Journey Now</h2>
-            <p class="mt-4 text-xl font-light">Learn the strategies that will help you succeed.</p>
-            <a href="/contact" class="mt-8 inline-block bg-white text-blue-600 text-lg px-8 py-4 rounded-lg hover:bg-gray-100">Get Started Today</a>
+    <section class="bg-blue-500 py-20 text-left text-white">
+        <div class="container max-w-7xl mx-auto  justify-between items-center px-6">
+            <h2 class="text-5xl font-bold">Three more ways I can help <span class="text-teal-300">you</span>.</h2>
+
+            <!-- Every Day Morning Newsletter -->
+            <div class="flex mt-16 items-start">
+                <h3 class="text-7xl font-bold text-white mr-8">01</h3>
+                <div>
+                    <h3 class="text-2xl font-semibold">Every Day Morning Newsletter</h3>
+                    <p class="mt-2 text-lg font-light">Every morning, we share practical guidance to help you get started with economic analysis and expand your world. Free.</p>
+                    <form class="mt-4 flex">
+                        <input type="email" placeholder="Email Address" class="px-4 py-2 rounded-l-lg text-black" required>
+                        <button type="submit" class="bg-black text-white px-6 py-2 rounded-r-lg hover:bg-gray-800">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Monthly One Dollar Subscription -->
+            <div class="flex mt-16 items-start">
+                <h3 class="text-7xl font-bold text-white mr-8">02</h3>
+                <div>
+                    <h3 class="text-2xl font-semibold">Monthly One Dollar Subscription</h3>
+                    <p class="mt-2 text-lg font-light">Every day, we analyze new stocks using technical indicators and share the insights. Additionally, we identify stocks we believe are undervalued.</p>
+                    <a href="#" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</a>
+                </div>
+            </div>
+
+            <!-- Join Our Investment Strategy Community -->
+            <div class="flex mt-16 items-start">
+                <h3 class="text-7xl font-bold text-white mr-8">03</h3>
+                <div>
+                    <h3 class="text-2xl font-semibold">Join Our Investment Strategy Community</h3>
+                    <p class="mt-2 text-lg font-light">Become part of a community focused on sharing investment strategies and insights. Together, we aim to grow our financial knowledge and achieve long-term success through collaboration.</p>
+                    <a href="#" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Join the Community</a>
+                </div>
+            </div>
         </div>
     </section>
 @endsection

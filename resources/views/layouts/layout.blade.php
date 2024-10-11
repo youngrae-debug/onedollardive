@@ -17,6 +17,8 @@
             <ul class="flex space-x-4">
                 <li><a href="/" class="text-gray-600 hover:text-gray-900">Home</a></li>
                 <li><a href="/about" class="text-gray-600 hover:text-gray-900">About</a></li>
+                <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Market Insights</a></li>
+                <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Subscription</a></li>
                 <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
             </ul>
         </nav>
@@ -24,16 +26,16 @@
 </header>
 
 <!-- Main Content -->
-<main class="container mx-auto py-16 text-center">
+<main class="w-full">
     @yield('content')
 </main>
 
 <!-- Footer -->
 <footer class="bg-gray-800 text-white py-8">
     <div class="container mx-auto text-center">
-        <p>&copy; {{ date('Y') }} Your Portfolio. All Rights Reserved.</p>
-        <p class="mt-2">Follow us on 
-            <a href="#" class="text-blue-400">Twitter</a>, 
+        <p>&copy; {{ date('Y') }} One Dollar Dive. All rights reserved.</p>
+        <p class="mt-2">Follow us on
+            <a href="#" class="text-blue-400">Twitter</a>,
             <a href="#" class="text-blue-400">LinkedIn</a>
         </p>
     </div>
