@@ -68,7 +68,7 @@
                 <h3 class="text-7xl font-bold text-white mr-8">02</h3>
                 <div>
                     <h3 class="text-2xl font-semibold">Monthly One Dollar Subscription</h3>
-                    <p class="mt-2 text-lg font-light">Every day, we analyze new stocks using technical indicators and share the insights. Additionally, we identify stocks we believe are undervalued.</p>
+                    <p class="mt-2 text-lg font-light">Every week, we analyze new stocks using technical indicators and share the insights. Additionally, we identify stocks we believe are undervalued.</p>
                     <a href="#" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</a>
                 </div>
             </div>

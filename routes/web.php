@@ -11,8 +11,12 @@ Route::get('/about', function () {
     return view('about'); // About 페이지
 });
 
-Route::get('/contact', function () {
-    return view('contact'); // Contact 페이지
+Route::get('/marketinsights', function () {
+    return view('marketinsights'); // Contact 페이지
+});
+
+Route::get('/subscription', function () {
+    return view('subscription'); // Contact 페이지
 });
 
 Route::middleware([

@@ -6,7 +6,7 @@
     <!-- My Story Section -->
     <section class="bg-white py-40">
         <div class="max-w-7xl mx-auto px-6 text-left">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">My Story</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 border-b-4 border-blue-600 inline-block">My Story</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <p class="text-lg text-gray-600">After years of trading the stock market, I realized that many people are intimidated by the complexity of investing. I founded One Dollar Dive to change that. My goal is to provide clear, actionable insights so that anyone, regardless of experience, can understand the markets and make informed decisions.</p>
                 <div>
@@ -19,7 +19,7 @@
     <!-- My Approach Section -->
     <section class="bg-gray-100 py-40">
         <div class="max-w-7xl mx-auto px-6 text-left">
-            <h2 class="text-4xl font-bold text-gray-900 mb-8">My Approach</h2>
+            <h2 class="text-4xl font-bold text-gray-900 mb-8 border-b-4 border-blue-600 inline-block">My Approach</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <!-- Simplicity -->
                 <div class="p-8 bg-white shadow-md rounded-lg">

@@ -17,9 +17,8 @@
             <ul class="flex space-x-4">
                 <li><a href="/" class="text-gray-600 hover:text-gray-900">Home</a></li>
                 <li><a href="/about" class="text-gray-600 hover:text-gray-900">About</a></li>
-                <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Market Insights</a></li>
-                <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Subscription</a></li>
-                <li><a href="/contact" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                <li><a href="/marketinsights" class="text-gray-600 hover:text-gray-900">Market Insights</a></li>
+                <li><a href="/subscription" class="text-gray-600 hover:text-gray-900">Subscription</a></li>
             </ul>
         </nav>
     </div>
