@@ -11,10 +11,10 @@
             <div>
                 <h2 class="text-4xl font-bold text-gray-900 mb-8 border-b-4 border-blue-600 inline-block">Subscription</h2>
                 <p class="mt-6 text-lg font-semibold">Stay Ahead of the Market with Weekly Insights</p>
-                <p class="mt-6 text-lg font-light">Get exclusive market insights, including sector performance, economic indicators, undervalued stocks, and upcoming events—all delivered to your inbox every week to help you make informed investment decisions.</p>
-            </div> 
+                <p class="mt-6 text-lg font-light">Receive an additional email each week with exclusive market insights on industry performance, economic indicators, undervalued stocks, upcoming events, and more to help you make informed investment decisions.</p>
+            </div>
             <img src="https://via.placeholder.com/600x400" alt="Subscription Insights" class="rounded-lg shadow-lg w-full">
-        </div> 
+        </div>
     </div>
 </section>
 
@@ -73,12 +73,9 @@
     <!-- Call to Action Section -->
     <div class="w-full md:w-1/3 bg-white text-gray-900 rounded-lg p-8 shadow-lg">
         <h2 class="text-2xl font-bold mb-4">Subscribe to the Newsletter</h2>
-        <p class="mb-6 text-gray-700">Join 215K+ readers of The Saturday Solopreneur for exclusive tips, strategies, and resources to launch, grow, & monetize your one-person internet business.</p>
+        <p class="mb-6 text-gray-700">Join The One Dollar Dive readers and get exclusive tips, strategies, and resources for starting an easy economy, growing yourself, and making money.</p>
         <form class="flex flex-col space-y-4">
-            <div class="relative">
-                <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-600" required>
-            </div>
-            <button type="submit" class="bg-blue-600 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">Subscribe</button>
+            <button type="submit" class="bg-blue-600 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">Google sign-in</button>
         </form>
     </div>
 </section>

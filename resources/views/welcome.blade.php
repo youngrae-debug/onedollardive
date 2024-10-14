@@ -18,8 +18,10 @@
                 <div class="text-left mb-8 md:mb-0">
                     <h2 class="text-3xl font-bold text-gray-900 mb-3">Start here.</h2>
                     <form action="/subscribe" method="POST" class="flex">
-                        <input type="email" name="email" placeholder="Email Address" class="px-4 py-3 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                        <button type="submit" class="bg-blue-600 text-white text-lg px-8 py-3 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+                        <button type="button" class="flex items-center justify-center bg-blue-500 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-600 transition-colors duration-300">
+                            <img src="{{ asset('img/google-logo.png') }}" alt="Google Logo" class="w-6 h-6 mr-3 bg-white rounded-full">
+                            Sign up with Google
+                        </button>
                     </form>
                 </div>
             </div>
@@ -57,8 +59,7 @@
                     <h3 class="text-2xl font-semibold">Every Day Morning Newsletter</h3>
                     <p class="mt-2 text-lg font-light">Every morning, we share practical guidance to help you get started with economic analysis and expand your world. Free.</p>
                     <form class="mt-4 flex">
-                        <input type="email" placeholder="Email Address" class="px-4 py-2 rounded-l-lg text-black" required>
-                        <button type="submit" class="bg-black text-white px-6 py-2 rounded-r-lg hover:bg-gray-800">Subscribe</button>
+                        <button type="submit" class="bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Google sign-in</button>
                     </form>
                 </div>
             </div>
@@ -79,7 +80,7 @@
                 <div>
                     <h3 class="text-2xl font-semibold">Join Our Investment Strategy Community</h3>
                     <p class="mt-2 text-lg font-light">Become part of a community focused on sharing investment strategies and insights. Together, we aim to grow our financial knowledge and achieve long-term success through collaboration.</p>
-                    <a href="#" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Join the Community</a>
+                    <div class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Preparing the community</div>
                 </div>
             </div>
         </div>
