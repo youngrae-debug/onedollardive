@@ -13,7 +13,7 @@
                 <p class="mt-6 text-lg font-semibold">Stay Informed and Make Smarter Investments</p>
                 <p class="mt-6 text-lg font-light">Explore comprehensive financial insights, including technical analysis, sector trends, economic events, and more—all designed to help you stay ahead in the market.</p>
             </div> 
-            <img src="https://via.placeholder.com/600x400" alt="Market Insights" class="rounded-lg shadow-lg w-full">
+            <img src="{{ asset('img/test1.jpg') }}" alt="Market Insights" class="rounded-lg shadow-lg w-full">
         </div> 
     </div>
 </section>
@@ -47,9 +47,17 @@
         <div>
             <h2 class="text-4xl font-bold text-gray-900 mb-6">Discover Weekly Market Insights</h2>
             <p class="text-lg text-gray-600 mb-6">We bring you weekly financial insights directly to your inbox. Stay informed about market trends, economic indicators, and undervalued stocks—all designed to keep you a step ahead in your investing journey.</p>
-            <a href="/subscribe" class="inline-block bg-blue-600 text-white text-lg px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors duration-300">Subscribe Now</a>
+            <form action="{{ route('google.login') }}" method="GET" class="flex">
+                @csrf
+                <button type="submit" class="flex items-center justify-center bg-blue-600 text-white text-lg px-6 py-3 rounded-md hover:bg-blue-700 transition-colors duration-300">
+                    <img src="{{ asset('img/google-logo.png') }}" alt="Google Logo" class="w-6 h-6 mr-3 bg-white rounded-full">
+                    Sign up with Google
+                </button>
+            </form>
+        
+        
         </div>
-        <img src="https://via.placeholder.com/600x400" alt="Market Insights" class="rounded-lg shadow-lg w-full">
+        <img src="{{ asset('img/nasdaq.png') }}" alt="Market Insights" class="rounded-lg shadow-lg w-full">
     </div>
     </div>
 </section>

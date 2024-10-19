@@ -10,7 +10,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                 <p class="text-lg text-gray-600">After years of trading the stock market, I realized that many people are intimidated by the complexity of investing. I founded One Dollar Dive to change that. My goal is to provide clear, actionable insights so that anyone, regardless of experience, can understand the markets and make informed decisions.</p>
                 <div>
-                    <img src="/images/my-story.jpg" alt="My Story Image" class="w-full h-auto rounded-lg shadow-md">
+                    <!-- <img src="{{ asset('img/test3.jpg') }}" alt="My Story Image" class="w-96 h-96 rounded-lg shadow-md"> -->
                 </div>
             </div>
         </div>

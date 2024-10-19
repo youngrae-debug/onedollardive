@@ -13,7 +13,7 @@
                 <p class="mt-6 text-lg font-semibold">Stay Ahead of the Market with Weekly Insights</p>
                 <p class="mt-6 text-lg font-light">Receive an additional email each week with exclusive market insights on industry performance, economic indicators, undervalued stocks, upcoming events, and more to help you make informed investment decisions.</p>
             </div>
-            <img src="https://via.placeholder.com/600x400" alt="Subscription Insights" class="rounded-lg shadow-lg w-full">
+            <img src="{{ asset('img/test2.jpg') }}" alt="Subscription Insights" class="rounded-lg shadow-lg w-full">
         </div>
     </div>
 </section>
@@ -74,8 +74,12 @@
     <div class="w-full md:w-1/3 bg-white text-gray-900 rounded-lg p-8 shadow-lg">
         <h2 class="text-2xl font-bold mb-4">Subscribe to the Newsletter</h2>
         <p class="mb-6 text-gray-700">Join The One Dollar Dive readers and get exclusive tips, strategies, and resources for starting an easy economy, growing yourself, and making money.</p>
-        <form class="flex flex-col space-y-4">
-            <button type="submit" class="bg-blue-600 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">Google sign-in</button>
+        <form action="{{ route('google.login') }}" method="GET" class="flex flex-col space-y-4">
+            @csrf
+            <button type="submit" class="flex items-center justify-center bg-blue-600 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                <img src="{{ asset('img/google-logo.png') }}" alt="Google Logo" class="w-6 h-6 mr-3 bg-white rounded-full">
+                Sign up with Google
+            </button>
         </form>
     </div>
 </section>

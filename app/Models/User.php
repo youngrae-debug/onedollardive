@@ -64,4 +64,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    // 구독과의 관계 설정
+    public function subscription()
+    {
+        return $this->hasOne(Subscription::class);
+    }
 }
