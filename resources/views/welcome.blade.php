@@ -64,14 +64,13 @@
                     @endguest
                     <!-- Subscribe Now 버튼 -->
                     @auth
-                    <form action="{{ route('subscribe') }}" method="POST" class="flex">
+                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">
                         @csrf
                         <button type="submit" class="flex items-center justify-center bg-blue-700 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-300">
                             Subscribe Now
                         </button>
                     </form>
                     @endauth
-
 
                     <!-- 구독 모달 창 -->
                     <div id="subscribeModal" class="fixed z-50 inset-0 hidden flex items-center justify-center bg-gray-800 bg-opacity-75">
@@ -141,7 +140,7 @@
                 <div>
                     <h3 class="text-2xl font-semibold">Monthly One Dollar Subscription</h3>
                     <p class="mt-2 text-lg font-light">Every week, we analyze new stocks using technical indicators and share the insights. Additionally, we identify stocks we believe are undervalued.</p>
-                    <form action="{{ route('subscribe') }}" method="POST" class="flex">
+                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">
                         @csrf
                         <button type="submit" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</button>
                     </form>
