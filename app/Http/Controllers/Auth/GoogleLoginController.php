@@ -36,7 +36,7 @@ class GoogleLoginController extends Controller
                 ]);
 
                 Auth::login($newUser);
-                return redirect()->intended('dashboard');
+                return redirect()->intended('/');
             }
         } catch (Exception $e) {
             return redirect('/login')->withErrors(['error' => 'Google 로그인에 실패했습니다. 다시 시도해 주세요.']);

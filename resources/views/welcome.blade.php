@@ -40,7 +40,7 @@
                     <h2 class="text-3xl font-bold text-gray-900">Want to join us?</h2>
                     @guest
                         <!-- 로그인되어 있지 않을 때 표시 -->
-                        <p class="mt-4 text-lg text-gray-600">From free to $1, start with a click and create a thousand times the value - many investors have already started!</p>
+                        <p class="mt-4 text-lg text-gray-600">From free to $1, start with a click and create a thousand times the value - many investors have already started! Become a member and get free information.</p>
                     @endguest
                     @auth
                         <!-- 로그인되어 있을 때 표시 -->
@@ -64,12 +64,13 @@
                     @endguest
                     <!-- Subscribe Now 버튼 -->
                     @auth
-                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">
-                        @csrf
-                        <button type="submit" class="flex items-center justify-center bg-blue-700 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-300">
-                            Subscribe Now
-                        </button>
-                    </form>
+{{--                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">--}}
+{{--                        @csrf--}}
+{{--                        <button type="submit" class="flex items-center justify-center bg-blue-700 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-300">--}}
+{{--                            Subscribe Now--}}
+{{--                        </button>--}}
+{{--                    </form>--}}
+                    <div class="flex items-center justify-center bg-blue-700 text-white text-lg px-6 py-3 rounded-lg hover:bg-blue-500 transition-colors duration-300">Preparing</div>
                     @endauth
 
                     <!-- 구독 모달 창 -->
@@ -140,10 +141,12 @@
                 <div>
                     <h3 class="text-2xl font-semibold">Monthly One Dollar Subscription</h3>
                     <p class="mt-2 text-lg font-light">Every week, we analyze new stocks using technical indicators and share the insights. Additionally, we identify stocks we believe are undervalued.</p>
-                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">
-                        @csrf
-                        <button type="submit" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</button>
-                    </form>
+{{--                    <form action="{{ route('paypal.subscribe') }}" method="POST" class="flex">--}}
+{{--                        @csrf--}}
+{{--                        <button type="submit" class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</button>--}}
+{{--                    </form>--}}
+                    <div class="mt-6 inline-block bg-black text-white px-8 py-4 rounded-lg hover:bg-gray-800">Subscribe</div>
+
                 </div>
             </div>
 
