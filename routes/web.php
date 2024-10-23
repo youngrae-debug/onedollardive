@@ -68,6 +68,13 @@ Route::get('/subscription', function () {
     return view('subscription'); // Subscription 페이지
 });
 
+Route::post('/logout', function (Request $request) {
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
+    return redirect('/'); // 리다이렉트 경로 설정
+})->name('logout');
+
 // 구독 경로에서 auth 미들웨어 제거하고 컨트롤러에서 직접 확인
 Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
 
