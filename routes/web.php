@@ -18,6 +18,10 @@ Route::get('/marketinsights', function () {
     return view('marketinsights'); // Market Insights 페이지
 });
 
+Route::get('/subscription', function () {
+    return view('subscription'); // Subscription 페이지
+});
+
 
 Route::get('/subscribe/success', [PayPalController::class, 'success'])->name('paypal.success');
 Route::get('/subscribe/cancel', [PayPalController::class, 'cancel'])->name('paypal.cancel');
@@ -38,7 +42,7 @@ Route::get('auth/google/callback', [GoogleLoginController::class, 'handleGoogleC
 Route::get('/paypal/test', function () {
     $provider = new PayPalClient;
     $provider->setApiCredentials(config('paypal'));
-    
+
     try {
         $accessToken = $provider->getAccessToken();
         dd($accessToken);
