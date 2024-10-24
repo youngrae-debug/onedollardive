@@ -5,6 +5,7 @@ use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\Auth\GoogleLoginController;
 use App\Http\Controllers\PayPalController;
 use Srmklive\PayPal\Services\PayPal as PayPalClient;
+use Illuminate\Support\Facades\Session;
 
 //Route::get('/', function () {
 //    return view('welcome'); // 나중에 포트폴리오 홈페이지로 변경할 예정
@@ -70,8 +71,8 @@ Route::get('/subscription', function () {
 
 Route::post('/logout', function (Request $request) {
     Auth::logout();
-    $request->session()->invalidate();
-    $request->session()->regenerateToken();
+    Session::invalidate();
+    Session::regenerateToken();
     return redirect('/'); // 리다이렉트 경로 설정
 })->name('logout');
 
