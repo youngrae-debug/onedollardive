@@ -71,8 +71,7 @@ Route::get('/subscription', function () {
 
 Route::post('/logout', function (Request $request) {
     Auth::logout();
-    Session::invalidate();
-    Session::regenerateToken();
+    Session::flush(); // 모든 세션 데이터 삭제
     return redirect('/'); // 리다이렉트 경로 설정
 })->name('logout');
 
