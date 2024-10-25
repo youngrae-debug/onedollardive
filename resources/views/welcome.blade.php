@@ -54,7 +54,7 @@
                     @guest
                     <!-- 로그인되어 있지 않을 때 표시 -->
                     <h2 class="text-3xl font-bold text-gray-900 mb-3">Start here.</h2>
-                        <form action="{{ route('google.login', [], true) }}" method="GET" class="flex">
+                        <form action="https://onedollardive.com/auth/google" method="GET" class="flex">
                         @csrf
                         <button type="submit" class="flex items-center justify-center bg-blue-700 text-white text-lg px-6 py-3 rounded-full hover:bg-blue-500 transition-colors duration-300">
                             <img src="{{ asset('img/google-logo.png') }}" alt="Google Logo" class="w-6 h-6 mr-3 bg-white rounded-full">
